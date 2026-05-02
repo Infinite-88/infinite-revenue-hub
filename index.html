@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 INFINITE REVENUE HUB - Your Gateway to Automated Income</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.5rem; margin-bottom: 40px; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; padding: 50px 20px; }
+        .service { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); }
+        .service h3 { font-size: 2rem; margin-bottom: 15px; color: #ffdd44; }
+        .service p { margin-bottom: 20px; line-height: 1.6; }
+        .price { font-size: 2.5rem; font-weight: bold; color: #4CAF50; margin-bottom: 20px; }
+        .cta { background: #4CAF50; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s; }
+        .cta:hover { background: #45a049; transform: translateY(-2px); }
+        .contact { background: rgba(0,0,0,0.3); padding: 40px; margin: 50px 0; border-radius: 15px; text-align: center; }
+        .social { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
+        .social a { color: white; text-decoration: none; font-size: 1.2rem; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🚀💰 INFINITE REVENUE HUB</h1>
+            <p>Transform Your Ideas Into Automated Income Streams</p>
+            <p><strong>Blockchain • AI • Business Automation • Custom Development</strong></p>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <h3>🪙 Custom Token Creation</h3>
+                <p>Launch your own cryptocurrency or business token with smart contracts, tokenomics design, and deployment on major blockchains.</p>
+                <div class="price">$1,000 - $5,000</div>
+                <button class="cta" onclick="contactUs('token')">Get Your Token →</button>
+            </div>
+
+            <div class="service">
+                <h3>🏢 Business Platform SaaS</h3>
+                <p>Complete business automation platform with CRM, analytics, and workflow management. Scale from startup to enterprise.</p>
+                <div class="price">$29 - $199/month</div>
+                <button class="cta" onclick="contactUs('saas')">Start Free Trial →</button>
+            </div>
+
+            <div class="service">
+                <h3>⚡ Blockchain Consulting</h3>
+                <p>Expert blockchain development and integration services. Smart contracts, DApps, and crypto wallet solutions.</p>
+                <div class="price">$100 - $200/hour</div>
+                <button class="cta" onclick="contactUs('consulting')">Book Consultation →</button>
+            </div>
+
+            <div class="service">
+                <h3>🤖 AI Integration</h3>
+                <p>AI-powered blockchain solutions, predictive analytics, automated trading bots, and intelligent business tools.</p>
+                <div class="price">$2,000 - $10,000</div>
+                <button class="cta" onclick="contactUs('ai')">Explore AI Solutions →</button>
+            </div>
+
+            <div class="service">
+                <h3>📚 Premium Courses</h3>
+                <p>Learn to build blockchain applications, create tokens, and automate your business. Exclusive tutorials and code access.</p>
+                <div class="price">$49 - $299</div>
+                <button class="cta" onclick="contactUs('courses')">Unlock Knowledge →</button>
+            </div>
+
+            <div class="service">
+                <h3>🔧 White-Label Solutions</h3>
+                <p>License our proven platforms for your business. Complete source code, customization rights, and ongoing support.</p>
+                <div class="price">$5,000 - $25,000</div>
+                <button class="cta" onclick="contactUs('whitelabel')">License Platform →</button>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>🚀 Ready to Build Your Empire?</h2>
+            <p>Join 1000+ entrepreneurs who've automated their income with our solutions</p>
+            <div class="social">
+                <a href="mailto:contact@infinite88.dev">📧 Email</a>
+                <a href="https://github.com/Infinite-88">💻 GitHub</a>
+                <a href="#telegram">💬 Telegram</a>
+                <a href="#discord">🎮 Discord</a>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.1rem;">⚡ <strong>Response Time: Under 2 hours</strong> ⚡</p>
+        </div>
+    </div>
+
+    <script>
+        function contactUs(service) {
+            const messages = {
+                token: 'I want a custom token created for my project',
+                saas: 'I\'m interested in the business platform SaaS',
+                consulting: 'I need blockchain consulting services', 
+                ai: 'I want AI integration for my business',
+                courses: 'I want access to premium courses',
+                whitelabel: 'I\'m interested in white-label solutions'
+            };
+            
+            const subject = `Service Inquiry: ${service.toUpperCase()}`;
+            const body = `Hi,\n\n${messages[service]}.\n\nPlease send me more details about pricing and next steps.\n\nThanks!`;
+            
+            window.location.href = `mailto:contact@infinite88.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        }
+        
+        // Add some interactive effects
+        document.querySelectorAll('.service').forEach(service => {
+            service.addEventListener('mouseenter', () => {
+                service.style.transform = 'translateY(-5px)';
+            });
+            service.addEventListener('mouseleave', () => {
+                service.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
